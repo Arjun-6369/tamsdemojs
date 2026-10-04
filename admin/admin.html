@@ -1,1 +1,26 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin | TAMS</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-theme="admin">
+<header>
+  <h1>TAMS Admin</h1>
+  <div><span id="who"></span><button class="ghost" onclick="logout()">Log out</button></div>
+</header>
+<nav id="nav">
+  <button data-view="agents">Agents</button>
+  <button data-view="customers">Customers</button>
+  <button data-view="complaints">Complaints</button>
+  <button data-view="addAgent">Add agent</button>
+</nav>
+<main id="view"></main>
+<div id="toast"></div>
+<script src="../js/db.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>
