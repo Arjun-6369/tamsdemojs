@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent | TAMS</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-theme="agent">
+<header>
+  <h1>TAMS Agent</h1>
+  <div><span id="who"></span><button class="ghost" onclick="logout()">Log out</button></div>
+</header>
+<nav id="nav">
+  <button data-view="tasks">My tasks</button>
+  <button data-view="history">Closed tasks</button>
+  <button data-view="profile">My profile</button>
+</nav>
+<main id="view"></main>
+<div id="toast"></div>
+<script src="../js/db.js"></script>
+<script src="../js/agent.js"></script>
+</body>
+</html>
