@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAMS Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="center">
+  <div class="card">
+    <h1>TAMS</h1>
+    <p style="color:var(--mute)">Task Assignment &amp; Management System</p>
+
+    <form id="loginForm">
+      <label>Log in as
+        <select id="role" required>
+          <option value="">Select role</option>
+          <option value="admin">Admin</option>
+          <option value="agent">Agent</option>
+          <option value="customer">Customer</option>
+        </select>
+      </label>
+      <label id="idRow" hidden>Your ID
+        <input id="uid" type="number" min="1" placeholder="e.g. 1">
+      </label>
+      <label>Password
+        <input id="password" type="password" required>
+      </label>
+      <button type="submit">Log in</button>
+    </form>
+    <p id="msg"></p>
+
+    <details>
+      <summary>New customer? Register here</summary>
+      <form id="regForm">
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Contact <input name="contact" type="tel" required></label>
+        <label>Address <input name="address" required></label>
+        <button type="submit">Create account</button>
+      </form>
+    </details>
+
+    <!-- <p class="hint">Demo passwords: admin123, agent123, customer123. Sample IDs: agent 1 or 2, customer 1.</p> -->
+  </div>
+</div>
+<script src="js/db.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
