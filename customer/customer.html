@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer | TAMS</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-theme="customer">
+<header>
+  <h1>TAMS Customer</h1>
+  <div><span id="who"></span><button class="ghost" onclick="logout()">Log out</button></div>
+</header>
+<nav id="nav">
+  <button data-view="complaint">New complaint</button>
+  <button data-view="track">My complaints</button>
+</nav>
+<main id="view"></main>
+<div id="toast"></div>
+<script src="../js/db.js"></script>
+<script src="../js/customer.js"></script>
+</body>
+</html>
